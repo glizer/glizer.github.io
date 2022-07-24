@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0 !important;
+  overflow: auto !important;
+}
+
+body {
+  color: #A1A1CE;
+  background-color: #333366;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.relative {
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #A1A1CE;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+a {
+  color: #FF4C60;
+  outline: 0;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: #F7F7F7;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 0;
+}
+
+.avatar-pic {
+  display: flex;
+  width: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #A1A1CE;
+  padding: 5px;
+  margin: auto;
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+section .intro {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.social-icons {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  padding: 11px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: solid 1px #A1A1CE;
+}
+
+@media screen and (max-width: 900px) {
+  .social-icons a {
+    width: 14px;
+    padding: 6px;
+  }
+}
+
+.social-icons img {
+  transition: all 0.3s;
+  filter: invert(.9);
+}
+
+.social-icons a:hover {
+  border-color: #fff;
+}
+
+.social-icons a:hover img {
+  filter: invert(1);
+}
