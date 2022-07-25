@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  color: #A1A1CE;
+  color: #ffffff;
   background-color: #333366;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
@@ -45,14 +45,15 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #A1A1CE;
+  color: #ffffff;
   font-family: "Rubik", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   margin: 0;
 }
 
 h1 {
   font-size: 36px;
+  line-height: 1.1;
 }
 
 h2 {
@@ -82,12 +83,17 @@ a:focus {
   outline: 0;
 }
 
+#home {
+  background-image: url('/img/bg.jpg');
+  background-size: cover;
+}
+
 .avatar-pic {
   display: flex;
   width: 130px;
   border-radius: 50%;
   overflow: hidden;
-  border: 3px solid #A1A1CE;
+  border: 3px solid #ffffff;
   padding: 5px;
   margin: auto;
 }
@@ -111,7 +117,7 @@ section .intro {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
 }
 
 .social-icons {
@@ -128,7 +134,7 @@ section .intro {
   padding: 11px;
   border-radius: 50%;
   overflow: hidden;
-  border: solid 1px #A1A1CE;
+  border: solid 1px #ffffff;
 }
 
 @media screen and (max-width: 900px) {
