@@ -184,6 +184,7 @@ section .intro {
 
     @media screen and (max-width: 900px) {
       margin: auto;
+      width: 130px;
     }
   }
 
@@ -209,6 +210,11 @@ section .intro {
       min-width: 190px;
       gap: 8px;
       height: min-content;
+
+      @media screen and (max-width: 900px) {
+        max-width: 100%;
+        min-width: 100%;
+      }
 
       span {
         display: inline-flex;

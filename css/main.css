@@ -183,6 +183,7 @@ section .intro {
 @media screen and (max-width: 900px) {
   .about .avatar-pic {
     margin: auto;
+    width: 130px;
   }
 }
 .about .description {
@@ -208,6 +209,12 @@ section .intro {
   min-width: 190px;
   gap: 8px;
   height: min-content;
+}
+@media screen and (max-width: 900px) {
+  .about .description .tags {
+    max-width: 100%;
+    min-width: 100%;
+  }
 }
 .about .description .tags span {
   display: inline-flex;
