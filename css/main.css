@@ -225,28 +225,26 @@ section .intro {
         padding: 0 8px;
         border-radius: 15px;
         color: #fff; }
-        .about .description .tags span:nth-child(1) {
+        .about .description .tags span:nth-child(1), .about .description .tags span:nth-child(11) {
           background: fuchsia; }
-        .about .description .tags span:nth-child(2) {
+        .about .description .tags span:nth-child(2), .about .description .tags span:nth-child(12) {
           background: blue; }
-        .about .description .tags span:nth-child(3) {
+        .about .description .tags span:nth-child(3), .about .description .tags span:nth-child(13) {
           background: cornflowerblue; }
-        .about .description .tags span:nth-child(4) {
+        .about .description .tags span:nth-child(4), .about .description .tags span:nth-child(14) {
           background: darksalmon; }
-        .about .description .tags span:nth-child(5) {
+        .about .description .tags span:nth-child(5), .about .description .tags span:nth-child(15) {
           background: darkgoldenrod; }
-        .about .description .tags span:nth-child(6) {
+        .about .description .tags span:nth-child(6), .about .description .tags span:nth-child(16) {
           background: mediumvioletred; }
-        .about .description .tags span:nth-child(7) {
+        .about .description .tags span:nth-child(7), .about .description .tags span:nth-child(17) {
           background: cadetblue; }
-        .about .description .tags span:nth-child(8) {
+        .about .description .tags span:nth-child(8), .about .description .tags span:nth-child(18) {
           background: lightcoral; }
-        .about .description .tags span:nth-child(9) {
+        .about .description .tags span:nth-child(9), .about .description .tags span:nth-child(19) {
           background: mediumseagreen; }
-        .about .description .tags span:nth-child(10) {
+        .about .description .tags span:nth-child(10), .about .description .tags span:nth-child(20) {
           background: tomato; }
-        .about .description .tags span:nth-child(11) {
-          background: slateblue; }
     .about .description:after {
       position: absolute;
       content: "";
