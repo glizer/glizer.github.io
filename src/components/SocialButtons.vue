@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import instagramIcon from '../assets//img/instagram.png';
 import telegramIcon from '../assets//img/telegram.png';
 import twitterIcon from '../assets//img/twitter.png';
 import googlePlusIcon from '../assets//img/google-plus.png';
@@ -21,7 +22,7 @@ export default {
     return {
       buttons: [{
         id: 'instagram',
-        icon: telegramIcon,
+        icon: instagramIcon,
         link: 'https://www.instagram.com/paveltorbeev/',
       }, {
         id: 'telegram',
