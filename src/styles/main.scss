@@ -10,11 +10,12 @@
 html {
   margin: 0 !important;
   overflow: auto !important;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background-color: #090a0f;
 }
 
 body {
   color: #ffffff;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 1.7;
@@ -25,6 +26,17 @@ body {
 
 main {
   overflow: hidden;
+}
+
+.section-parent {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+
+  > section {
+    scroll-snap-align: start;
+    height: 100vh;
+  }
 }
 
 img {

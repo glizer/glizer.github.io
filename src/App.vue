@@ -9,22 +9,23 @@
     <div id="stars2"></div>
     <div id="stars3"></div>
     <astronaut />
-    <section id="home" class="align-items-center space-bg">
+    <div class="section-parent">
+      <section id="home" class="align-items-center space-bg">
 
-      <div class="container">
+        <div class="container">
 
-        <div class="intro">
-          <img src="./assets/img/avatar.png" alt="Pavel Torbeev" class="avatar-pic">
+          <div class="intro">
+            <img src="./assets/img/avatar.png" alt="Pavel Torbeev" class="avatar-pic">
 
-          <h1>Pavel Torbeev</h1>
-          <span>I'm a frontend developer</span>
+            <h1>Pavel Torbeev</h1>
+            <span>I'm a frontend developer</span>
 
-          <social-buttons />
+            <social-buttons />
+          </div>
         </div>
-      </div>
 
-    </section>
-    <section id="about" class="align-items-center">
+      </section>
+      <section id="about" class="align-items-center">
       <div class="container">
         <h2 class="page-title">About Me</h2>
         <div class="about">
@@ -43,6 +44,6 @@
         </div>
       </div>
     </section>
-
+    </div>
   </main>
 </template>
