@@ -1,6 +1,6 @@
 @charset "UTF-8";
+@forward "stars";
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic");
-@import "stars";
 
 * {
   margin: 0;
@@ -21,6 +21,10 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  overflow: hidden;
 }
 
 img {
@@ -150,8 +154,8 @@ section .intro {
   border: solid 1px #ffffff;
 
   @media screen and (max-width: 900px) {
-      width: 14px;
-      padding: 6px;
+    width: 14px;
+    padding: 6px;
   }
 }
 
@@ -187,105 +191,106 @@ section .intro {
     }
   }
 
-  .description {
-    position: relative;
+
+  .tags {
     display: flex;
-    width: fit-content;
-    border-radius: 15px;
-    padding: 20px;
-    background: #404066;
-    gap: 40px;
+    align-items: baseline;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: min-content;
+    min-width: 190px;
+    gap: 8px;
+    height: min-content;
 
     @media screen and (max-width: 900px) {
-      flex-direction: column;
+      max-width: 100%;
+      min-width: 100%;
     }
 
-    .tags {
-      display: flex;
-      align-items: baseline;
-      flex-wrap: wrap;
-      width: 100%;
-      max-width: min-content;
-      min-width: 190px;
-      gap: 8px;
-      height: min-content;
+    span {
+      display: inline-flex;
+      padding: 0 8px;
+      border-radius: 15px;
+      color: #fff;
 
-      @media screen and (max-width: 900px) {
-        max-width: 100%;
-        min-width: 100%;
+      &:nth-child(10n+1) {
+        background: fuchsia;
       }
 
-      span {
-        display: inline-flex;
-        padding: 0 8px;
-        border-radius: 15px;
-        color: #fff;
+      &:nth-child(10n+2) {
+        background: blue;
+      }
 
-        &:nth-child(1) {
-          background: fuchsia;
-        }
+      &:nth-child(10n+3) {
+        background: cornflowerblue;
+      }
 
-        &:nth-child(2) {
-          background: blue;
-        }
+      &:nth-child(10n+4) {
+        background: darksalmon;
+      }
 
-        &:nth-child(3) {
-          background: cornflowerblue;
-        }
+      &:nth-child(10n+5) {
+        background: darkgoldenrod;
+      }
 
-        &:nth-child(4) {
-          background: darksalmon;
-        }
+      &:nth-child(10n+6) {
+        background: mediumvioletred;
+      }
 
-        &:nth-child(5) {
-          background: darkgoldenrod;
-        }
+      &:nth-child(10n+7) {
+        background: cadetblue;
+      }
 
-        &:nth-child(6) {
-          background: mediumvioletred;
-        }
+      &:nth-child(10n+8) {
+        background: lightcoral;
+      }
 
-        &:nth-child(7) {
-          background: cadetblue;
-        }
+      &:nth-child(10n+9) {
+        background: mediumseagreen;
+      }
 
-        &:nth-child(8) {
-          background: lightcoral;
-        }
+      &:nth-child(10n+10) {
+        background: tomato;
+      }
 
-        &:nth-child(9) {
-          background: mediumseagreen;
-        }
-
-        &:nth-child(10) {
-          background: tomato;
-        }
-
-        &:nth-child(11) {
-          background: slateblue;
-        }
+      &:nth-child(10n+11) {
+        background: slateblue;
       }
     }
+  }
+}
 
-    &:after {
-      position: absolute;
-      content: "";
-      width: 0;
-      height: 0;
-      border: solid transparent;
-      border-right-color: #404066;
-      border-width: 15px;
-      right: 100%;
-      top: 20%;
+.description {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  border-radius: 15px;
+  padding: 20px;
+  background: #404066;
+  gap: 40px;
 
-      @media screen and (max-width: 900px) {
-        right: 50%;
-        top: auto;
-        bottom: 100%;
-        border-right-color: transparent;
-        border-bottom-color: #404066;
-        transform: translateX(50%);
-      }
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+
+  &.left-arrow:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    border-right-color: #404066;
+    border-width: 15px;
+    right: 100%;
+    top: 20%;
+
+    @media screen and (max-width: 900px) {
+      right: 50%;
+      top: auto;
+      bottom: 100%;
+      border-right-color: transparent;
+      border-bottom-color: #404066;
+      transform: translateX(50%);
     }
   }
 }
