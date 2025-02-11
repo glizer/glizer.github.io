@@ -1,4 +1,5 @@
 <script setup>
+  import Astronaut from './components/astronaut.vue'
   import SocialButtons from './components/SocialButtons.vue'
 </script>
 
@@ -7,6 +8,7 @@
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
+    <astronaut />
     <section id="home" class="align-items-center space-bg">
 
       <div class="container">
