@@ -6,7 +6,7 @@ import { nextTick } from 'vue'
 const supportedLocales = ['ru', 'en']
 
 const routes = [
-    { path: '/:locale/', component: HomePage },
+    { path: '/:locale(en|ru)', component: HomePage },
     { path: '/:pathMatch(.*)*', redirect: `/${supportedLocales[0]}/` }
 ]
 
