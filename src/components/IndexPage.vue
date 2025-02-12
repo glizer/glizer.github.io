@@ -3,7 +3,7 @@
     <div class="container">
 
       <div class="intro">
-        <img src="../assets/img/avatar.png" :alt="$t('name')" class="avatar-pic">
+        <img src="../assets/img/avatar.png" :alt="$t('name')" loading="lazy" class="avatar-pic">
 
         <h1>{{ $t('name') }}</h1>
         <span>{{ $t('welcome') }}</span>

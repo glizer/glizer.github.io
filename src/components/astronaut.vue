@@ -1,8 +1,8 @@
 <template>
   <div class="astronaut-component">
     <button class="astronaut-wrapper" @click="activateAstronaut()" :class="{'_active': active}">
-      <img :src="pic" class="astronaut-avatar"/>
-      <img :src="src" class="astronaut-suit"/>
+      <img :src="pic" class="astronaut-avatar" loading="lazy"/>
+      <img :src="src" class="astronaut-suit" loading="lazy"/>
     </button>
   </div>
 </template>

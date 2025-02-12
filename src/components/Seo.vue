@@ -1,30 +1,23 @@
-<template>
-  <head>
-    <title>{{ pageTitle }}</title>
-    <meta name="description" :content="pageDescription"/>
-    <link rel="alternate" href="https://paveltorbeev.ru/" hreflang="ru"/>
-    <link rel="alternate" href="https://paveltorbeev.ru/en" hreflang="en"/>
-  </head>
-</template>
+<script setup>
+import { computed } from 'vue'
+import { useHead } from '@vueuse/head'
+import { useI18n } from 'vue-i18n'
 
-<script>
-  import { computed } from 'vue'
-  import { useI18n } from 'vue-i18n'
-  import { useRoute } from 'vue-router'
+const { locale } = useI18n()
 
-  export default {
-    setup () {
-      const { locale } = useI18n()
-      const route = useRoute()
+const title = computed(() => locale.value === 'ru' ? 'Павел Торбеев' : 'Pavel Torbeev')
+const description = computed(() =>
+  locale.value === 'en' ? 'Torbeev Pavel. Official representation on the Internet' : 'Торбеев Павел. Официальное представительство в сети интернет'
+)
 
-      const pageTitle = computed(() =>
-        locale.value === 'en' ? 'Pavel Torbeev website' : 'Павел Торбеев'
-      )
-      const pageDescription = computed(() =>
-        locale.value === 'en' ? 'Torbeev Pavel. Official representation on the Internet' : 'Торбеев Павел. Официальное представительство в сети интернет'
-      )
-
-      return { pageTitle, pageDescription }
-    }
-  }
+useHead({
+  title,
+  meta: [
+    { name: 'description', content: description }
+  ],
+  link: [
+    { rel: 'alternate', hreflang: 'ru', href: 'https://paveltorbeev.ru/' },
+    { rel: 'alternate', hreflang: 'en', href: 'https://paveltorbeev.ru/#/en' }
+  ]
+})
 </script>
