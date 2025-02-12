@@ -10,9 +10,10 @@
   }
   @return string.unquote($value);
 }
-$shadows-small:  multiple-box-shadow(700);
+
+$shadows-small: multiple-box-shadow(700);
 $shadows-medium: multiple-box-shadow(200);
-$shadows-big:    multiple-box-shadow(100);
+$shadows-big: multiple-box-shadow(100);
 #stars {
   width: 1px;
   height: 1px;
@@ -70,8 +71,8 @@ $shadows-big:    multiple-box-shadow(100);
 @keyframes animStar {
   from {
     transform: translateY(0px);
-    }
+  }
   to {
     transform: translateY(-2000px);
-    }
+  }
 }

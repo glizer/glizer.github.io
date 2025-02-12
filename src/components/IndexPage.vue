@@ -3,10 +3,10 @@
     <div class="container">
 
       <div class="intro">
-        <img src="../assets/img/avatar.png" :alt="name" class="avatar-pic">
+        <img src="../assets/img/avatar.png" :alt="$t('name')" class="avatar-pic">
 
-        <h1>{{ name }}</h1>
-        <span>{{ description }}</span>
+        <h1>{{ $t('name') }}</h1>
+        <span>{{ $t('welcome') }}</span>
 
         <social-buttons/>
       </div>
@@ -25,8 +25,6 @@
     data: function () {
       return {
         avatar: avatar,
-        name: 'Pavel Torbeev',
-        description: 'I\'m a frontend developer',
       }
     }
   }
