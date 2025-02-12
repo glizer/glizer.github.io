@@ -108,6 +108,8 @@ a:focus {
 .avatar-pic {
   display: flex;
   width: 130px;
+  height: auto;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid #ffffff;
@@ -159,6 +161,7 @@ section .intro {
   align-items: center;
   justify-content: center;
   width: 28px;
+  height: 28px;
   padding: 11px;
   border-radius: 50%;
   overflow: hidden;
@@ -193,6 +196,7 @@ section .intro {
 
   .avatar-pic {
     width: 200px;
+    height: auto;
     align-self: flex-start;
     margin: 0;
 
