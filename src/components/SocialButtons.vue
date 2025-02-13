@@ -28,10 +28,10 @@
           id: 'telegram',
           icon: telegramIcon,
           link: 'https://t.me/ptorbeev',
-        }, {
-          id: 'twitter',
-          icon: twitterIcon,
-          link: 'https://twitter.com/glizer',
+        // }, {
+        //   id: 'twitter',
+        //   icon: twitterIcon,
+        //   link: 'https://twitter.com/glizer',
         }, {
           id: 'google-plus',
           icon: googlePlusIcon,

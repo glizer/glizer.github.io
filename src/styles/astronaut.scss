@@ -7,6 +7,16 @@
   animation: fly 4s infinite linear;
   z-index: 10;
 
+  &.fixed {
+    position: relative;
+    transform: translate(0, 0);
+
+    .astronaut-wrapper {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
   .astronaut-wrapper {
     transition: transform .3s;
     position: relative;
