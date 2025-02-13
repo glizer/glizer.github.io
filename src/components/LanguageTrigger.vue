@@ -5,6 +5,7 @@
       :key="locale"
       :class="{ active: locale === selectedLocale }"
       @click="changeLanguage(locale)"
+      :aria-label="$t('changeLanguage') + ' ' + locale"
       :style="{backgroundImage: 'url(' + getStyle(locale) + ')'}"
     >
     </button>
@@ -32,8 +33,8 @@
 
       const getStyle = (locale) => {
         return locale === 'en'
-          ? 'https://flagcdn.com/w40/gb.png'
-          : 'https://flagcdn.com/w40/ru.png'
+          ? 'https://flagcdn.com/gb.svg'
+          : 'https://flagcdn.com/ru.svg'
       }
 
       watch(() => route.params.locale, (newLocale) => {

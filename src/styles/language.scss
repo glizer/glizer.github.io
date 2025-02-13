@@ -5,23 +5,30 @@
 .language-switcher button {
   transition: .3s ease;
   cursor: pointer;
-  margin-left: -10px;
   border-radius: 50%;
   overflow: hidden;
-  width: 30px;
-  height: 30px;
-  border: solid 2px #333333;
+  width: 46px;
+  height: 46px;
+  border: solid 2px #ccc;
   background-position: center center;
+  background-size: cover;
+  transform: scale(0.8);
+
+  &:last-child {
+    margin-left: -20px;
+  }
 }
 
 .language-switcher button:hover {
-  transform: scale(1.2);
+  transform: scale(1);
 }
 
 .language-switcher .active {
   z-index: 100;
   border-color: #fff;
+  transform: scale(1);
   animation: activate .3s linear;
+  pointer-events: none;
 }
 
 @keyframes activate {
@@ -29,7 +36,7 @@
     transform: translate(0, 0);
   }
   50% {
-    transform: translate(0, -50%);
+    transform: translate(0, -30%);
   }
   100% {
     transform: translate(0, 0);
