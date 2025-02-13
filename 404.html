@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Page 404</title>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=./">
-    <script type="text/javascript">
-        var path = window.location.pathname
-
-        if (path !== '/') {
-            window.location.replace(window.origin)
-        }
-    </script>
 </head>
 <body>
+<div>
+    <main class="content">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+
+        <section id="404Error" class="align-items-center">
+            <div class="container"><h2 class="page-title">404 Error</h2>
+                <div class="astronaut-component">
+                    <div class="astronaut-wrapper">
+                        <img src="/src/assets/img/photo.png" class="astronaut-avatar" loading="lazy"><img
+                            src="/src/assets/img/astronaut.svg" class="astronaut-suit" loading="lazy">
+                    </div>
+                </div>
+                <a href="/">Go to main page</a>
+            </div>
+        </section>
+    </main>
+</div>
 </body>
 </html>
