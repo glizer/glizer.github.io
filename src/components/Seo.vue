@@ -13,6 +13,7 @@ const description = computed(() =>
 useHead({
   title,
   meta: [
+    { name: 'yandex-verification', content: '0e164bcf224968ca' },
     { name: 'description', content: description },
     { property: 'og:type', content: 'website' },
     { property: 'og:title', content: title },
