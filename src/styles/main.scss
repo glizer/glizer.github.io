@@ -88,7 +88,7 @@ h4 {
 }
 
 a {
-  color: #FF4C60;
+  color: #fff;
   outline: 0;
   transition: all 0.3s;
 }
@@ -160,35 +160,37 @@ section .intro {
   gap: 8px;
 }
 
-.social-icons a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  padding: 11px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: solid 1px #ffffff;
+.social-icons {
+  a, button {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    padding: 11px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: solid 1px #ffffff;
+    background: transparent;
+    cursor: pointer;
+    font-size: 24px;
 
-  @media screen and (max-width: 900px) {
-    width: 14px;
-    padding: 6px;
-    height: 14px;
+    @media screen and (max-width: 900px) {
+      width: 30px;
+      padding: 6px;
+      height: 30px;
+      font-size: 16px;
+    }
+
+    &:hover {
+      border-color: #fff;
+
+      img {
+        filter: invert(1);
+      }
+    }
   }
-}
-
-.social-icons img {
-  transition: all 0.3s;
-  filter: invert(.9);
-}
-
-.social-icons a:hover {
-  border-color: #fff;
-}
-
-.social-icons a:hover img {
-  filter: invert(1);
 }
 
 .about {
