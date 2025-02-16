@@ -4,9 +4,9 @@
       v-for="locale in locales"
       :key="locale"
       :class="{ active: locale === selectedLocale }"
-      @click="changeLanguage(locale)"
       :aria-label="$t('changeLanguage') + ' ' + locale"
       :style="{backgroundImage: 'url(' + getStyle(locale) + ')'}"
+      @click="changeLanguage(locale)"
     >
     </button>
   </div>
