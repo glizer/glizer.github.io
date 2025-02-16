@@ -5,9 +5,9 @@ import { useI18n } from 'vue-i18n'
 import image from '../assets/img/avatar.png';
 
 const { locale } = useI18n()
-const title = computed(() => locale.value === 'ru' ? 'Павел Торбеев' : 'Pavel Torbeev')
+const title = computed(() => locale.value === 'ru' ? 'Павел Торбеев | Frontend разработчик | Vue, SCSS, JavaScript' : 'Pavel Torbeev | Frontend developer | Vue, SCSS, JavaScript')
 const description = computed(() =>
-  locale.value === 'en' ? 'Torbeev Pavel. Official representation on the Internet' : 'Торбеев Павел. Официальное представительство в сети интернет'
+  locale.value === 'en' ? 'Torbeev Pavel. Official representation on the Internet' : 'Торбеев Павел. Официальное представительство в сети интернет. Frontend-разработчик с опытом в Vue. Люблю верстать и интерфейсы. Свяжитесь со мной!'
 )
 
 useHead({
