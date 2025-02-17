@@ -1,5 +1,6 @@
 .language-switcher {
   display: flex;
+  flex-direction: column;
 }
 
 .language-switcher button {
@@ -15,7 +16,8 @@
   transform: scale(0.8);
 
   &:last-child {
-    margin-left: -20px;
+    margin-top: -23px;
+    margin-left: -10px;
   }
 }
 

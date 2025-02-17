@@ -38,7 +38,7 @@
 <script>
   import '../styles/modal.scss'
   import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-    import { faXmark, faCheck } from '@fortawesome/free-solid-svg-icons'
+  import { faXmark, faCheck } from '@fortawesome/free-solid-svg-icons'
 
   export default {
     name: 'ModalWindow',
@@ -49,8 +49,8 @@
         email: '',
         message: '',
         icons: {
-            done: faCheck,
-            close: faXmark
+          done: faCheck,
+          close: faXmark
         }
       }
     },
@@ -59,7 +59,7 @@
         this.$emit('close')
       },
       sendForm: function() {
-          const self = this;
+        const self = this;
         const form = new FormData();
 
         form.append('email', this.email);

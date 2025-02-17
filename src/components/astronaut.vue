@@ -24,7 +24,7 @@
     methods: {
       activateAstronaut: function () {
         const self = this,
-          delay = 1000
+              delay = 1000
 
         self.active = true
         setTimeout(function () {

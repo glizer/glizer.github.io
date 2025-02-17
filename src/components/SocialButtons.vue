@@ -66,9 +66,9 @@
       }
     },
     methods: {
-        toggleModal: function () {
-            this.showModal = !this.showModal;
-        }
+      toggleModal: function () {
+        this.showModal = !this.showModal;
+      }
     }
   }
 </script>
