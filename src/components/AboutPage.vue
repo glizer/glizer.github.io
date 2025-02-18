@@ -22,7 +22,7 @@
 </template>
 
 <script>
-  import picture from '../assets/img/picture.png'
+  import picture from '../assets/img/picture.png?format=webp&quality=80'
 
   export default {
     name: 'AboutPage',

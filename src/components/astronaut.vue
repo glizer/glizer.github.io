@@ -10,7 +10,7 @@
 <script>
   import '../styles/astronaut.scss'
   import astronaut from '../assets//img/astronaut.svg'
-  import picture from '../assets//img/photo.png'
+  import picture from '../assets//img/photo.png?format=webp&quality=80'
 
   export default {
     name: 'astronaut',

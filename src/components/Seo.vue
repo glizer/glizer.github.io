@@ -2,7 +2,7 @@
   import { computed } from 'vue'
   import { useHead } from '@vueuse/head'
   import { useI18n } from 'vue-i18n'
-  import image from '../assets/img/avatar.png';
+  import image from '../assets/img/avatar.png?format=webp&quality=80';
 
   const { locale } = useI18n()
   const title = computed(() => locale.value === 'ru' ? 'Павел Торбеев | Frontend разработчик | Vue, SCSS, JavaScript' : 'Pavel Torbeev | Frontend developer | Vue, SCSS, JavaScript')

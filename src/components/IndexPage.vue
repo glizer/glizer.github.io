@@ -3,7 +3,7 @@
     <div class="container">
 
       <div class="intro">
-        <img src="../assets/img/avatar.png" :alt="$t('name')" loading="lazy" class="avatar-pic">
+        <img :src="avatar" :alt="$t('name')" loading="lazy" class="avatar-pic">
 
         <h1>{{ $t('name') }}</h1>
         <span>{{ $t('welcome') }}</span>
@@ -17,7 +17,7 @@
 
 <script>
   import SocialButtons from './SocialButtons.vue'
-  import avatar from '../assets/img/avatar.png'
+  import avatar from '../assets/img/avatar.png?format=webp&quality=80'
 
   export default {
     name: 'IndexPage',
