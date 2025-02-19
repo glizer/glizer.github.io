@@ -36,6 +36,8 @@ main {
 .section-parent {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 100vh;
 
   > section {
     scroll-snap-align: start;

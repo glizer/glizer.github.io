@@ -1,5 +1,5 @@
 <template>
-  <div class="scroll-mouse" :class="{'_hidden': isBottom}"></div>
+  <button class="scroll-mouse" @click="onClick()"></button>
 </template>
 
 <script>
@@ -8,18 +8,44 @@
     data: function () {
       return {
         isBottom: false,
+        activeSection: null,
+        sections: null,
       }
     },
     mounted: function () {
-      this.checkScroll();
-      window.addEventListener('scroll', this.checkScroll)
-    },
-    beforeUnmount () {
-      window.removeEventListener('scroll', this.checkScroll)
+      this.$nextTick(function () {
+        setTimeout(this.initIntersectionObserver, 2000)
+      })
     },
     methods: {
-      checkScroll: function () {
-        this.isBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight;
+      moveTo: function(id) {
+        const parent = document.querySelector('.section-parent');
+        const target = document.getElementById(id);
+
+        if (parent && target) {
+          parent.scrollTo({
+            top: target.offsetTop - parent.offsetTop,
+            behavior: 'smooth',
+          });
+        }
+      },
+      onClick: function () {
+        this.moveTo(this.activeSection == 'home' ? 'about' : 'home')
+      },
+      initIntersectionObserver: function () {
+        const self = this,
+              sections = document.querySelectorAll('.section-parent > section')
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              self.activeSection = entry.target.id;
+            }
+          })
+        }, { threshold: 0.4 })
+
+        sections.forEach((section) => observer.observe(section))
+        self.activeSection = [...sections].map(section => section.getAttribute('id'))[0];
       }
     }
   }
