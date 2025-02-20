@@ -6,6 +6,9 @@
         id="my-form"
         @click.stop=""
       >
+         <div v-if="isLoading" class="loader-overlay">
+          <div class="loader"></div>
+        </div>
         <label>
           {{ $t('yourEmail') }} :
           <input v-model="email" type="email" name="email">
@@ -15,11 +18,11 @@
           <textarea v-model="message" name="message"></textarea>
         </label>
         <div class="button-group">
-          <button class="close-btn" @click="closeModal">
+          <button class="close-btn" @click="isLoading ? null : closeModal()">
              <font-awesome-icon :icon="icons.close" />
             {{ $t('сloseBtn') }}
           </button>
-          <button type="submit" @click.stop="sendForm()">
+          <button type="submit" @click.stop="isLoading ? null : sendForm()">
             <font-awesome-icon :icon="icons.done" />
             {{ $t('sendBtn') }}
           </button>
@@ -28,7 +31,7 @@
       <div v-else>
         {{ status }}
         <div class="button-group">
-          <button class="close-btn" @click="closeModal">{{ $t('сloseBtn') }}</button>
+          <button class="close-btn" @click="isLoading ? null : closeModal()">{{ $t('сloseBtn') }}</button>
         </div>
       </div>
     </div>
@@ -48,6 +51,7 @@
         status: null,
         email: '',
         message: '',
+        isLoading: false,
         icons: {
           done: faCheck,
           close: faXmark
@@ -65,6 +69,7 @@
         form.append('email', this.email);
         form.append('message', this.message);
 
+        this.isLoading = true
         fetch('https://formspree.io/f/xwpvrzzj', {
           method: 'POST',
           body: form,
@@ -85,6 +90,8 @@
           }
         }).catch(error => {
           self.status = 'Oops! There was a problem submitting your form'
+        }).finally(function () {
+          self.isLoading = false;
         })
       }
     },
