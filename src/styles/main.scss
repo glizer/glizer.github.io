@@ -68,6 +68,8 @@ img {
 
 .container {
   padding: 30px;
+  flex: 0 0 100%;
+  box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -150,6 +152,7 @@ section .intro {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  align-items: center;
 }
 
 .page-title {

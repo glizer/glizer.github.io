@@ -2,6 +2,7 @@
   "name": "Pavel Torbeev",
   "welcome": "I'm a frontend developer",
   "about": "About me",
+  "timeLine": "Time line",
   "aboutTitle": "Hi, my name is Pavel and I am a frontend developer",
   "aboutDescription1": "I love cool interfaces, mark-up, and pies ",
   "aboutDescription2": "I love using my talents to bring more business to a worthy product.",
@@ -11,5 +12,102 @@
   "сloseBtn": "Close",
   "sendBtn": "Send",
   "yourEmail": "Your Email",
-  "yourMessage": "Your message"
+  "yourMessage": "Your message",
+  "cat": {
+    "frontend": "Frontend",
+    "life": "Life",
+    "work": "Work"
+  },
+  "burn": {
+    "title": "Born in Tomsk",
+    "description": "A small, cozy city in Siberia with a population of just over 500,000 people."
+  },
+  "school_start": {
+    "title": "First day at school",
+    "description": "Back then, I had no idea that code and pixels were waiting for me ahead."
+  },
+  "internet": {
+    "title": "Discovery of the Internet",
+    "description": "When I got access to the internet, I started experimenting with HTML and CSS, modifying ready-made pages to my liking. Later, I got into Macromedia Flash and discovered ActionScript — a distant relative of JavaScript."
+  },
+  "young_talents": {
+    "title": "Victory in the 'Young Talents' competition",
+    "description": "Won 1st place at the city science and technology conference for school students in informatics."
+  },
+  "macromedia": {
+    "title": "Macromedia Flash project",
+    "description": "Received an honorary diploma from the dean for a multimedia project. This was when I realized I loved creating interactive things."
+  },
+  "school_end": {
+    "title": "Graduated from school",
+    "description": "I had to choose between electronics and web development. I picked electronics—but that didn't last forever."
+  },
+  "tusur_start": {
+    "title": "Enrolled in TUSUR",
+    "description": "Studied at Tomsk State University of Control Systems and Radioelectronics but never stopped being passionate about web development."
+  },
+  "urban_tom_ru": {
+    "title": "urban.tom.ru",
+    "description": "Launched a youth-focused website with friends, organizing flash mobs and various events based on it."
+  },
+  "freelance": {
+    "title": "Freelancing",
+    "description": "During university, I started building websites on WordPress and Drupal, creating custom designs for clients."
+  },
+  "practice": {
+    "title": "Summer internship",
+    "description": "Developed a website for the university's media department. My first serious experience working on a real project."
+  },
+  "it_project": {
+    "title": "Grand Prix in the 'IT Project' competition",
+    "description": "A website I created for the SunDali music band won first place."
+  },
+  "six_hand_shake": {
+    "title": "Participation in Startup Village",
+    "description": "Developed and presented the '6 Handshakes' project."
+  },
+  "tusur_end": {
+    "title": "Graduated from university",
+    "description": "Got my diploma, but web development was what truly excited me."
+  },
+  "first_work": {
+    "title": "First job",
+    "description": "Started working in my field, but building websites remained my biggest passion."
+  },
+  "userstory": {
+    "title": "Joined UserStory",
+    "description": "Officially transitioned into web development. My passion became my profession."
+  },
+  "varys": {
+    "title": "Joined VARYS",
+    "description": "A new stage in my frontend development career."
+  },
+  "saint_p": {
+    "title": "Moved to Saint Petersburg",
+    "description": "New city, new opportunities, a new level of growth."
+  },
+  "org_one": {
+    "title": "Joined ORG1",
+    "description": "Even more experience, projects, and challenges."
+  },
+  "maraphone": {
+    "title": "Ran a marathon",
+    "description": "White Nights Marathon 2018, Saint Petersburg."
+  },
+  "war": {
+    "title": "Thirst for travel",
+    "description": "At some point, I realized I craved more freedom and new experiences."
+  },
+  "za4et": {
+    "title": "Za4et Radio",
+    "description": "With a group of enthusiasts, we launched Za4et Radio within the student business incubator."
+  },
+  "performica": {
+    "title": "Joined Performica",
+    "description": "Continuing to work on awesome projects."
+  },
+  "today": {
+    "title": "Today",
+    "description": "Here we are now."
+  }
 }

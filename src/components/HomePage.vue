@@ -1,4 +1,5 @@
 <script setup>
+  import TimeLine from './TimeLine.vue'
   import AboutPage from './AboutPage.vue'
   import IndexPage from './IndexPage.vue'
   import Astronaut from './astronaut.vue'
@@ -13,6 +14,7 @@
     <div class="section-parent">
       <index-page/>
       <about-page/>
+      <time-line/>
     </div>
   </main>
 </template>
