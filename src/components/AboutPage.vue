@@ -7,10 +7,7 @@
         <div class="description">
           <div>
             <h4>{{ $t('aboutTitle') }}</h4>
-            <p>{{ $t('aboutDescription1') }}</p>
-            <p>{{ $t('aboutDescription2') }}</p>
-            <p>{{ $t('aboutDescription3') }}</p>
-            <p>{{ $t('aboutDescription4') }}</p>
+            <p>{{ $t('aboutDescription') }}</p>
           </div>
           <div class="tags">
             <span v-for="tag in tags" :key="tag">{{ tag }}</span>

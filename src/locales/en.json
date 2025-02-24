@@ -4,10 +4,7 @@
   "about": "About me",
   "timeLine": "Time line",
   "aboutTitle": "Hi, my name is Pavel and I am a frontend developer",
-  "aboutDescription1": "I love cool interfaces, mark-up, and pies ",
-  "aboutDescription2": "I love using my talents to bring more business to a worthy product.",
-  "aboutDescription3": "I love productive work and hate bureaucracy",
-  "aboutDescription4": "Please don't call me, I'm an introvert.",
+  "aboutDescription": "I love great interfaces, coding, and pies. I enjoy creating something cool and useful, drawing attention to worthy things. I love productive work and can't stand bureaucracy. Not a fan of calls—texting is better.\n\nI'm interested not just in the web but in various tech projects. I like everything related to smart homes, automation, and new technologies. Always open to interesting challenges.",
   "changeLanguage": "Change the language to",
   "сloseBtn": "Close",
   "sendBtn": "Send",
@@ -75,11 +72,11 @@
     "description": "Started working in my field, but building websites remained my biggest passion."
   },
   "userstory": {
-    "title": "Joined UserStory",
+    "title": "UserStory",
     "description": "Officially transitioned into web development. My passion became my profession."
   },
   "varys": {
-    "title": "Joined VARYS",
+    "title": "VARYS",
     "description": "A new stage in my frontend development career."
   },
   "saint_p": {
@@ -87,7 +84,7 @@
     "description": "New city, new opportunities, a new level of growth."
   },
   "org_one": {
-    "title": "Joined ORG1",
+    "title": "ORG1",
     "description": "Even more experience, projects, and challenges."
   },
   "maraphone": {
@@ -103,7 +100,7 @@
     "description": "With a group of enthusiasts, we launched Za4et Radio within the student business incubator."
   },
   "performica": {
-    "title": "Joined Performica",
+    "title": "Performica",
     "description": "Continuing to work on awesome projects."
   },
   "today": {
