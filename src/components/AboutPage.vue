@@ -1,7 +1,5 @@
 <template>
-  <section id="about" class="align-items-center">
-    <div class="container">
-      <h2 class="page-title">{{ $t('about') }}</h2>
+  <block-section id="about" :title="$t('about')" >
       <div class="about">
         <div class="avatar-pic big"><img :src="picture" loading="lazy"/></div>
         <div class="description">
@@ -14,15 +12,16 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
+  </block-section>
 </template>
 
 <script>
+  import BlockSection from './block-section.vue'
   import picture from '../assets/img/picture.png?format=webp&quality=80'
 
   export default {
     name: 'AboutPage',
+    components: { BlockSection },
     data: function () {
       return {
         picture: picture,

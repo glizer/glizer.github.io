@@ -3,6 +3,10 @@
   "welcome": "I'm a frontend developer",
   "about": "About me",
   "timeLine": "Time line",
+  "skills": "Skills",
+  "link": "Link",
+  "hardSkill": "Hard skills",
+  "softSkill": "Soft skills",
   "aboutTitle": "Hi, my name is Pavel and I am a frontend developer",
   "aboutDescription": "I love great interfaces, coding, and pies. I enjoy creating something cool and useful, drawing attention to worthy things. I love productive work and can't stand bureaucracy. Not a fan of calls—texting is better.\n\nI'm interested not just in the web but in various tech projects. I like everything related to smart homes, automation, and new technologies. Always open to interesting challenges.",
   "changeLanguage": "Change the language to",
@@ -106,5 +110,73 @@
   "today": {
     "title": "Today",
     "description": "Here we are now."
+  },
+  "skills": {
+    "softSkills": {
+      "label": "Soft skills",
+      "skills": {
+        "communication": {
+          "label": "Communication",
+          "help_text": "Explaining complex things in simple terms"
+        },
+        "mind": {
+          "label": "Problem-solving",
+          "help_text": "Ability to find solutions"
+        },
+        "organization": {
+          "label": "Self-organization",
+          "help_text": "Task planning, deadlines"
+        },
+        "teamwork": {
+          "label": "Teamwork",
+          "help_text": "Code reviews, idea discussions"
+        },
+        "creative": {
+          "label": "Creativity",
+          "help_text": "Finding unconventional solutions"
+        },
+        "adaptive": {
+          "label": "Adaptability",
+          "help_text": "Ability to learn new things quickly"
+        },
+        "attention": {
+          "label": "Attention to detail",
+          "help_text": "Clean code, pixel perfect"
+        }
+      }
+    },
+    "hardSkills": {
+      "label": "Hard skills",
+      "skills": {
+        "html": {
+          "label": "HTML/CSS",
+          "help_text": "Semantic markup, SCSS, BEM"
+        },
+        "javaScript": {
+          "label": "JavaScript",
+          "help_text": "Modules, Promises, async/await"
+        },
+        "vue": {
+          "label": "Vue.js",
+          "help_text": "Composition API, Vue Router"
+        },
+        "ux": {
+          "label": "UI/UX",
+          "help_text": "Understanding accessibility (a11y), Figma"
+        },
+        "performance": {
+          "label": "Web Performance",
+          "help_text": "Load optimization, lazy loading"
+        },
+        "testing": {
+          "label": "Testing",
+          "help_text": "Jest, Playwright"
+        },
+        "buildTools": {
+          "label": "Build Tools",
+          "help_text": "Vite, Webpack"
+        }
+      }
+    }
   }
 }

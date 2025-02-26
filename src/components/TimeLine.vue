@@ -1,7 +1,5 @@
 <template>
-  <section id="timeline" class="align-items-center">
-    <div class="container">
-      <h2 class="page-title">{{ $t('timeLine') }}</h2>
+  <block-section id="timeline" :title="$t('timeLine')">
       <div class="timeline-categories">
         <button v-for="cat in categories" :title="cat.id" :class="{'_active': cat.isActive}" :data-label="cat.label"
                 @click="toggleCat(cat)">
@@ -21,12 +19,11 @@
           <div class="content">
             <h3>{{ event.title }}</h3>
             <p>{{ event.description }}</p>
-            <a v-if="event.proofs" :href="event.proofs" target="_blank">Ссылка</a>
+            <a v-if="event.proofs" :href="event.proofs" target="_blank">{{ $t('link') }}</a>
           </div>
         </div>
       </transition-group>
-    </div>
-  </section>
+  </block-section>
 
 </template>
 
@@ -49,10 +46,11 @@
     faCalendar,
     faPersonRunning
   } from '@fortawesome/free-solid-svg-icons'
+  import BlockSection from './block-section.vue'
 
   export default {
     name: 'TimeLine',
-    components: { FontAwesomeIcon },
+    components: { BlockSection, FontAwesomeIcon },
     data: function () {
       return {
         aCategories: ['frontend', 'life', 'work'],

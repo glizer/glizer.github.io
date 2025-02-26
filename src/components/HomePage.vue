@@ -1,4 +1,5 @@
 <script setup>
+  import SkillsPage from './SkillsPage.vue'
   import TimeLine from './TimeLine.vue'
   import AboutPage from './AboutPage.vue'
   import IndexPage from './IndexPage.vue'
@@ -14,6 +15,7 @@
     <div class="section-parent">
       <index-page/>
       <about-page/>
+      <skills-page />
       <time-line/>
     </div>
   </main>

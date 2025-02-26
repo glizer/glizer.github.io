@@ -164,6 +164,21 @@ section .intro {
   }
 }
 
+.grid-row {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+
+  @media screen and (max-width: 900px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .description {
+    width: auto;
+  }
+}
+
 .social-icons {
   display: flex;
   list-style: none;
@@ -405,6 +420,69 @@ section .intro {
   animation: spin 1s infinite linear;
 }
 
+.skill-block {
+  gap: 4px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 16px;
+  grid-row-gap: 8px;
+  align-items: center;
+  text-align: right;
+
+}
+
+.progress {
+  display: flex;
+  background: transparent;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 8px;
+  border: solid 1px #ccc;
+
+  > span {
+    transition: 2s;
+    display: inline-flex;
+    background: #fff;
+    border-radius: inherit;
+  }
+}
+
+.animation-fade {
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeInScale 0.8s ease-out forwards;
+}
+
+
+[data-tooltip] {
+  position: relative;
+
+  &::after {
+    transition: .3s;
+    opacity: 0;
+    width: max-content;
+    content: attr(data-tooltip);
+    padding: 1px 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-flex;
+    transform: translate(-50%, 0%);
+    background: #000;
+    border-radius: 4px;
+    text-align: center;
+    pointer-events: none;
+    font-size: 80%;
+  }
+
+  &:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -110%);
+  }
+}
+
 @keyframes spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -526,4 +604,15 @@ section .intro {
    80% {
       transform: translateY(8px);
    }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
