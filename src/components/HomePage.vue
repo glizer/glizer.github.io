@@ -15,7 +15,7 @@
     <div class="section-parent">
       <index-page/>
       <about-page/>
-      <skills-page />
+      <skills-page/>
       <time-line/>
     </div>
   </main>

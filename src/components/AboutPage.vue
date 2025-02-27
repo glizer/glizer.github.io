@@ -1,17 +1,17 @@
 <template>
-  <block-section id="about" :title="$t('about')" >
-      <div class="about">
-        <div class="avatar-pic big"><img :src="picture" loading="lazy"/></div>
-        <div class="description">
-          <div>
-            <h4>{{ $t('aboutTitle') }}</h4>
-            <p>{{ $t('aboutDescription') }}</p>
-          </div>
-          <div class="tags">
-            <span v-for="tag in tags" :key="tag">{{ tag }}</span>
-          </div>
+  <block-section id="about" :title="$t('about')">
+    <div class="about">
+      <div class="avatar-pic big"><img :src="picture" loading="lazy"/></div>
+      <div class="description">
+        <div>
+          <h4>{{ $t('aboutTitle') }}</h4>
+          <p>{{ $t('aboutDescription') }}</p>
+        </div>
+        <div class="tags">
+          <span v-for="tag in tags" :key="tag">{{ tag }}</span>
         </div>
       </div>
+    </div>
   </block-section>
 </template>
 

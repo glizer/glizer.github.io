@@ -3,7 +3,7 @@
   <router-view/>
   <div class="bottom-container">
     <language-trigger/>
-    <scroll-indicator />
+    <scroll-indicator/>
   </div>
 </template>
 

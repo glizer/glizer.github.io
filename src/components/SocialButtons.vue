@@ -1,13 +1,17 @@
 <template>
   <div>
-  <ul class="social-icons">
-    <li v-for="button in buttons" :key="button.id">
-      <a v-if="typeof button.link == 'string'" :href="button.link" target="_blank" :title="button.id"><font-awesome-icon :icon="button.icon"/></a>
-      <button v-else :title="button.id" @click="button.link()"><font-awesome-icon :icon="button.icon"/></button>
-    </li>
-  </ul>
+    <ul class="social-icons">
+      <li v-for="button in buttons" :key="button.id">
+        <a v-if="typeof button.link == 'string'" :href="button.link" target="_blank" :title="button.id">
+          <font-awesome-icon :icon="button.icon"/>
+        </a>
+        <button v-else :title="button.id" @click="button.link()">
+          <font-awesome-icon :icon="button.icon"/>
+        </button>
+      </li>
+    </ul>
     <transition name="fade">
-    <modal-window v-if="showModal" @close="toggleModal" />
+      <modal-window v-if="showModal" @close="toggleModal"/>
     </transition>
   </div>
 </template>
@@ -16,9 +20,17 @@
   import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
   import ModalWindow from './ModalWindow.vue'
 
-  import { faTwitter, faInstagram, faLinkedin, faGithub, faTelegram, faVk, faFacebook, faGoogle } from '@fortawesome/free-brands-svg-icons'
+  import {
+    faTwitter,
+    faInstagram,
+    faLinkedin,
+    faGithub,
+    faTelegram,
+    faVk,
+    faFacebook,
+    faGoogle
+  } from '@fortawesome/free-brands-svg-icons'
   import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-
 
   export default {
     name: 'SocialButtons',
@@ -34,10 +46,10 @@
           id: 'telegram',
           icon: faTelegram,
           link: 'https://t.me/ptorbeev',
-        // }, {
-        //   id: 'twitter',
-        //   icon: faTwitter,
-        //   link: 'https://twitter.com/glizer',
+          // }, {
+          //   id: 'twitter',
+          //   icon: faTwitter,
+          //   link: 'https://twitter.com/glizer',
         }, {
           id: 'google-plus',
           icon: faGoogle,
@@ -67,7 +79,7 @@
     },
     methods: {
       toggleModal: function () {
-        this.showModal = !this.showModal;
+        this.showModal = !this.showModal
       }
     }
   }

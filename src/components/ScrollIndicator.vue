@@ -31,13 +31,13 @@
       },
       onClick: function () {
         const sections = [...document.querySelectorAll('.section-parent > section')].map((selector) => selector.id),
-              newStep = sections.findIndex((name) => name == this.activeSection)
+          newStep = sections.findIndex((name) => name == this.activeSection)
 
         this.moveTo(sections[newStep + 1] ? sections[newStep + 1] : sections[0])
       },
       initIntersectionObserver: function () {
         const self = this,
-              sections = document.querySelectorAll('.section-parent > section')
+          sections = document.querySelectorAll('.section-parent > section')
 
         const observer = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {

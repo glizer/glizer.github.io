@@ -2,9 +2,9 @@
   <section :id="id" class="align-items-center" :class="{'is-loaded': isLoaded}">
     <div v-if="title" class="container">
       <h2 class="page-title">{{ title }}</h2>
-      <slot name="default" />
+      <slot name="default"/>
     </div>
-     <slot v-else name="default" />
+    <slot v-else name="default"/>
   </section>
 </template>
 
@@ -34,7 +34,7 @@
           ([entry]) => {
             if (entry.isIntersecting) {
               self.isLoaded = true
-              self.$emit('loaded');
+              self.$emit('loaded')
             }
           },
           { threshold: 0.5 }

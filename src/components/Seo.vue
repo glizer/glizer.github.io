@@ -2,7 +2,7 @@
   import { computed } from 'vue'
   import { useHead } from '@vueuse/head'
   import { useI18n } from 'vue-i18n'
-  import image from '../assets/img/avatar.png?format=webp&quality=80';
+  import image from '../assets/img/avatar.png?format=webp&quality=80'
 
   const { locale } = useI18n()
   const title = computed(() => locale.value === 'ru' ? 'Павел Торбеев | Frontend разработчик | Vue, SCSS, JavaScript' : 'Pavel Torbeev | Frontend developer | Vue, SCSS, JavaScript')
@@ -29,7 +29,13 @@
       { rel: 'alternate', hreflang: 'ru', href: 'https://paveltorbeev.ru/' },
       { rel: 'alternate', hreflang: 'en', href: 'https://paveltorbeev.ru/#/en' },
       { rel: 'canonical', href: 'https://paveltorbeev.ru/' },
-      { rel: 'preload', as: 'style', type: 'font/woff2', crossorigin: 'anonymous', href: 'https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic' }
+      {
+        rel: 'preload',
+        as: 'style',
+        type: 'font/woff2',
+        crossorigin: 'anonymous',
+        href: 'https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic'
+      }
     ]
   })
 </script>

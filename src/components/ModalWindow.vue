@@ -6,7 +6,7 @@
         id="my-form"
         @click.stop=""
       >
-         <div v-if="isLoading" class="loader-overlay">
+        <div v-if="isLoading" class="loader-overlay">
           <div class="loader"></div>
         </div>
         <label>
@@ -19,11 +19,11 @@
         </label>
         <div class="button-group">
           <button class="close-btn" @click="isLoading ? null : closeModal()">
-             <font-awesome-icon :icon="icons.close" />
+            <font-awesome-icon :icon="icons.close"/>
             {{ $t('сloseBtn') }}
           </button>
           <button type="submit" @click.stop="isLoading ? null : sendForm()">
-            <font-awesome-icon :icon="icons.done" />
+            <font-awesome-icon :icon="icons.done"/>
             {{ $t('sendBtn') }}
           </button>
         </div>
@@ -40,7 +40,7 @@
 
 <script>
   import '../styles/modal.scss'
-  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
   import { faXmark, faCheck } from '@fortawesome/free-solid-svg-icons'
 
   export default {
@@ -62,12 +62,12 @@
       closeModal () {
         this.$emit('close')
       },
-      sendForm: function() {
-        const self = this;
-        const form = new FormData();
+      sendForm: function () {
+        const self = this
+        const form = new FormData()
 
-        form.append('email', this.email);
-        form.append('message', this.message);
+        form.append('email', this.email)
+        form.append('message', this.message)
 
         this.isLoading = true
         fetch('https://formspree.io/f/xwpvrzzj', {
@@ -91,7 +91,7 @@
         }).catch(error => {
           self.status = 'Oops! There was a problem submitting your form'
         }).finally(function () {
-          self.isLoading = false;
+          self.isLoading = false
         })
       }
     },

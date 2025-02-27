@@ -1,5 +1,5 @@
 <template>
-  <block-section id="skills" :title="$t('skills')" @loaded="isLoaded = true">
+  <block-section id="skills" :title="$t('skillsPage')" @loaded="isLoaded = true">
     <div class="skills">
       <div class="grid-row">
         <div v-for="block in blocks" :key="block.id">
@@ -122,17 +122,17 @@
     methods: {
       addTranslate: function (block) {
         const translate = this.$t,
-              newSkills = block.skills.map(function (skill) {
-                return Object.assign({}, skill, {
-                  label: translate('skills.' + block.id + '.skills.' + skill.id + '.label'),
-                  help_text: translate('skills.' + block.id + '.skills.' + skill.id + '.help_text'),
-                })
-              });
+          newSkills = block.skills.map(function (skill) {
+            return Object.assign({}, skill, {
+              label: translate('skills.' + block.id + '.skills.' + skill.id + '.label'),
+              help_text: translate('skills.' + block.id + '.skills.' + skill.id + '.help_text'),
+            })
+          })
 
         return Object.assign({}, block, {
           label: translate('skills.' + block.id + '.label'),
           skills: newSkills,
-        });
+        })
       }
     }
   }
